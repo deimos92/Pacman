@@ -112,7 +112,10 @@ public class GameManager : MonoBehaviour
 
     public void PowerPelletEaten(PowerPellet pellet)
     {
-        // TODO: change ghost state
+        foreach (var ghost in ghosts)
+        {
+            ghost.frightened.Enable(pellet.duration);
+        }
         
         PelletEaten(pellet);
         CancelInvoke();

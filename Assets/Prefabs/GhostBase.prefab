@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6920917349060983170}
   - component: {fileID: 422841587352020755}
+  - component: {fileID: 7309807673206085051}
   m_Layer: 7
   m_Name: Eyes
   m_TagString: Untagged
@@ -84,6 +85,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7309807673206085051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4158598927023795013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a286ee33ab0324d8ae3d2d2637b6db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  up: {fileID: 21300000, guid: 25c3d35b843764548bc56d32bd3ddbd3, type: 3}
+  down: {fileID: 21300000, guid: 1b9b8398e21b271418f54d8eac173c35, type: 3}
+  left: {fileID: 21300000, guid: ae3a5edd2f224fc4ba91cc0caac60813, type: 3}
+  right: {fileID: 21300000, guid: 2780d061bec810549914834d375c190a, type: 3}
 --- !u!1 &5966534624379576942
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0
+  inside: {fileID: 0}
+  outside: {fileID: 0}
 --- !u!114 &3207299784780052744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +255,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 8
+  body: {fileID: 0}
+  eyes: {fileID: 0}
+  blue: {fileID: 0}
+  white: {fileID: 0}
 --- !u!114 &6424665141143078140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4620763660479853137
 Transform:
   m_ObjectHideFlags: 0
@@ -391,7 +414,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6517207241525279362}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -472,7 +495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8738723301542909711
 Transform:
   m_ObjectHideFlags: 0
@@ -495,7 +518,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8259665177105747016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

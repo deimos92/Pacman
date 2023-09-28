@@ -1,7 +1,8 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-10)]
 public class Ghost : MonoBehaviour
-{
+{   
     public Movement movement {  get; private set; }
     public GhostHome home { get; private set; }
     public GhostScatter scatter { get; private set; }
@@ -18,7 +19,7 @@ public class Ghost : MonoBehaviour
     private void Awake()
     {
         manager = FindObjectOfType<GameManager>();
-
+        
         movement = GetComponent<Movement>();
         home = GetComponent<GhostHome>();
         scatter = GetComponent<GhostScatter>();
@@ -30,6 +31,7 @@ public class Ghost : MonoBehaviour
     {
         ResetState();
     }
+
 
     public void ResetState()
     {
